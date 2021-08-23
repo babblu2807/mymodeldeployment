@@ -3,7 +3,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def welcome():
-        return render_template('index.html')
+        return "welcome"
 @app.route('/suces/<int:score>')
 def suce(score):
  return render_template('result.html',s=score)
